@@ -14,7 +14,7 @@ class TestAPIWeather(unittest.TestCase):
         content = self.api_utils.get_weather(latitude=None, longitude=30.7411902151, expected_code=400)
 
     def test_get_weather_with_longitude_none(self):
-        content = self.api_utils.get_weather(latitude=30.7411, longitude=None, expected_code=400)
+        content = self.api_utils.get_weather(latitude=30.74114124124, longitude=None, expected_code=400)
 
     def test_negative_get_weather_with_empty_longitude(self):
         content = self.api_utils.get_weather(latitude=30.7411, longitude="", expected_code=400)
